@@ -6,6 +6,12 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Stack;
 
+
+/**
+*
+* @author Juan Andres Galicia Reyes 20298 UVG 2021
+* @version 06/02/21
+*/
 public class CalculadoraCod implements calculadora{
 	private int resultado;
 	
@@ -111,6 +117,7 @@ public class CalculadoraCod implements calculadora{
 	public String decode(String a) {
 		Stack<String> aux = new Stack<>();
 		Stack<String> pila = new Stack<>();
+		int total=0;
 		String res = "";
 		try
 		{
@@ -131,35 +138,12 @@ public class CalculadoraCod implements calculadora{
                     pila.push(aux.pop());
                 }
                 System.out.println(pila);
-                operar(pila);
+                total = operar(pila);
             }
 		}
 		catch(ArithmeticException | IOException | NumberFormatException e){
             return e.toString();
 		}
-		return res;
+		return Integer.toString(total);
 	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
