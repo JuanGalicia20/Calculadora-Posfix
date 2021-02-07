@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package calculadoraposfix;
 
 import java.util.Scanner;
@@ -15,7 +10,8 @@ import java.io.IOException;
 
 /**
  *
- * @author juana
+ * @author Juan Andres Galicia Reyes 20298 UVG 2021
+ * @version 06/02/21
  */
 public class CalculadoraPosfix {
 
@@ -42,7 +38,11 @@ public class CalculadoraPosfix {
     		switch(op1)
     		{
     			case "1":
-    				System.out.println("INSTRUCCIONES---------------------------------\n");
+    				System.out.println("-------------------INSTRUCCIONES---------------------------------\n"
+    						+ "Esta es una calculadora de operaciones basicas entre 2 digitos"
+    						+ "\nPara esto se requiere seleccionar un archivo de texto que contenga los digitos"
+    						+ " y operaciones en formato posfix. Es decir ambos digitos primero y luego la operacion"
+    						+ "\nPor ejemplo: 5 2 + es una suma de 5 + 2 ");
     				break;
     				
     				
